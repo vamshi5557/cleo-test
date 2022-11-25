@@ -48,7 +48,7 @@ Followed the instructions from documentation from https://docs.aws.amazon.com/AW
 
 **************** For Mysql container ********
 
-Docker container is running at port 33060 download while terraform instance creation.
+Docker container is running at port 33060, which was downloaded at terraform instance creation.
 
 logged into docker container using docker exec -it mariatestdb bash
 
