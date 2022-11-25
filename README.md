@@ -12,21 +12,26 @@ Pruchased domain since freedomain websites are not working  adding A record in D
 ************* Please find the PNG images uplaoded for config **************
 
         *********** Conifigure Terraform **********
-1. Make terraform files I have created seperate for networking and VM(ec2 related sources)
-2. For Networking : 
-3.      Created VPC, Subnets ,Internet Gateway, Public subnets route association and Security groups (For 22,443 and 80 )
-4. For Ec2 Instance and its parameters: 
-5.      Create a Public key and Private keys . Public can be placed in Ec2 instance and Private can be stored from our local machine can be used later if required and then set
-6.      permissions.
-7.      .
-8.      Created a ec2 machine resource and mapped using subnets and Security groups created in Networking.
-9.      .
-10.      Now write install.sh shell script and make executable permissions.
-11.      .
-12.      Using "Provisioners" like file and Remote-exec the file is copied and executed the shell scitpt. though you can also achieve from user data I have used "Provisioners"
-13.      for convienence.
-14.      
-15.  For Shell script file : 
+        
+Make terraform files I have created seperate for networking and VM(ec2 related sources)
+
+For Networking :
+
+Created VPC, Subnets ,Internet Gateway, Public subnets route association and Security groups (For 22,443 and 80 )
+
+For Ec2 Instance and its parameters: 
+
+Create a Public key and Private keys . Public can be placed in Ec2 instance and Private can be stored from our local machine can be used later if required and then set permissions to the key.
+
+ Created a ec2 machine resource and mapped using subnets and Security groups created in Networking.
+
+ Now write install.sh shell script and make executable permissions.
+
+Using "Provisioners" like file and Remote-exec the file is copied and executed the shell scitpt. though you can also achieve from user data I have used "Provisioners"
+for convienence.
+     
+ For Shell script file : 
+ 
         Install Httpd server 
         Start and enable it .
         Change permissions & ownership for /var/www folder
@@ -61,4 +66,4 @@ Add user wordpress and password.  Also using the command GRANT ALL PRIVILEGES ON
  
  Downlaod the Html, css , javascipt files from online and then use api key from openweather website .
  
-     Moved weather site folder to where wordpress is available and you could get the page.
+ Moved weather site folder to where wordpress is available and you could get the page.
