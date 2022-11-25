@@ -9,3 +9,4 @@ For a Real time you could use a 3 tier architecture for Test, Pre-prd/UAT , Prod
 
 Pruchased domain since freedomain websites are not working  adding A record in Domain registrar and installed LetsEncrypt SSL certificates
 
+************* Please find the PNG images uplaoded for config **************
